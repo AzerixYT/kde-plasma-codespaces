@@ -15,6 +15,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y fi
 RUN chmod +x /install-de.sh
 RUN /install-de.sh
 
+RUN print hello world!
+
 RUN \
   chmod +x /installapps.sh && \
   /installapps.sh && \
